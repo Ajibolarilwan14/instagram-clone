@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const {MONGOURI} = require('../server/config/keys');
+const {MONGOURI} = require('./config/keys');
 
 
 // on connection, log message to the console
