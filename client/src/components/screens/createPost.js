@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from 'react';
+import {useHistory} from 'react-router-dom';
 import M from 'materialize-css';
 
 const CreatePost = () => {
     const [title, setTitle] = useState("")
     const [body, setBody] = useState("")
+    const history = useHistory()
     const [image, setImage] = useState("")
     const [url, setUrl] = useState("")
     useEffect(()=>{
@@ -27,8 +29,8 @@ const CreatePost = () => {
                     M.toast({html: data.error, classes:"#c62828 red darken-2"})
                 }else{
                     M.toast({html: "post created successfully", classes:"#43a047 green darken-1"})
-                    // history.push("/signin");
-                    window.location.href = "http://localhost:3000";
+                    history.push("/signin");
+                    // window.location.href = "http://localhost:3000";
                 }
                 
             }).catch(err => {
