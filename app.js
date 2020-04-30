@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const PORT = process.env.PORT || 10000;
 const {MONGOURI} = require('./config/keys');
 
 
@@ -40,8 +41,9 @@ mongoose.connection.on('error',(err)=>{
     
 })
 
+// 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
+// "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
 
-const PORT = process.env.PORT || 9000;
 
 
 app.listen(PORT, ()=>{

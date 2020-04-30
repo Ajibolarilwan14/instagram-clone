@@ -62,6 +62,7 @@ const Signin = () => {
             onClick={() => Postdata()}>
             SIGNIN
             </button>
+            <h6> <Link to="/resetpassword">Forgot password?</Link> </h6>
             <h5>Don't have an account?</h5>
             <h6> <Link to="/signup">Sign up here!</Link> </h6>
             </div>
