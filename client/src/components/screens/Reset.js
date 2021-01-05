@@ -2,7 +2,7 @@ import React, {useState, useContext} from 'react';
 import {Link, useHistory} from 'react-router-dom';
 import M from 'materialize-css';
 
-const ResetPassword = () => {
+const ResetPassword = () => { 
     const history = useHistory();
     const [email, setEmail] = useState("")
     const Postdata = () => {

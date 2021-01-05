@@ -18,7 +18,7 @@ const Signup = () => {
     },[url])
 
     const uploadPic = () => {
-        const data = new FormData()
+        const data = new FormData() 
         data.append("file", image)
         data.append("upload_preset", "insta-clone")
         data.append("cloud_name", "student")
